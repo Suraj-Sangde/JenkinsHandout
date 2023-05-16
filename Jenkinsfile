@@ -10,13 +10,13 @@ steps{
 stage('dev'){
 steps{
 		sh 'cp -r dev.html /var/www/html'
-		sh 'chmod -R 777 /var/www/html/index.html'
+		sh 'chmod -R 777 /var/www/html/dev.html'
 }
 }
 stage('qa'){
 steps{
 		sh 'cp -r qa.html /var/www/html'
-		sh 'chmod -R 777 /var/www/html/index.html'
+		sh 'chmod -R 777 /var/www/html/qa.html'
 }
 }
 stage('restart-httpd'){
