@@ -27,7 +27,7 @@ steps{
 }
 	stage('install-tree'){
 steps{
-		sh 'yum install tree'
+		sh 'yum remove tree -y'
 		
 }
 }
