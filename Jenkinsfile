@@ -25,5 +25,11 @@ steps{
 		
 }	
 }
+	stage('install-tree'){
+steps{
+		sh 'yum install tree'
+		
+}
+}
 }
 }
